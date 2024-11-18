@@ -1,0 +1,80 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: rgb(12, 12, 12);
+    width: 250px;
+    min-height: fit-content;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0px 2px 0px white;
+}
+.anchor{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+.nsfw{
+    color: red;
+}
+.on{
+    background-color: rgb(79, 255, 79);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.off{
+    background-color: rgb(255, 64, 64);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.forbidden{
+    background-color: rgb(156, 156, 156);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.testing{
+    background-color: rgb(64, 124, 255);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.connectionFailed{
+    background-color: rgb(215, 255, 69);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.testing {
+    background-color: rgb(64, 124, 255);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    animation: flashBackground 1s infinite alternate;
+}
+
+@keyframes flashBackground {
+    0% {
+        background-color: rgb(64, 124, 255);
+    }
+    100% {
+        background-color: rgb(28, 55, 112);
+    }
+}
+
+@media (max-width: 633px){
+    .anchor{
+        font-size: 0.8em;
+    }
+    .card{
+        padding: 8px;
+        width: 220px;
+    }
+}

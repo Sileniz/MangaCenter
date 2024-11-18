@@ -1,0 +1,58 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.title{
+    color: white;
+    font-variation-settings: "opsz" 14;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.6em;
+  font-style: normal;
+}
+.section{
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 15px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 6px;
+    margin: 10px;
+}
+.divMangas{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    background-color: rgb(48, 48, 48);
+    border-radius: 6px;
+    padding: 10px;
+}
+.titleSection{
+    color: white;
+    font-size: 2em;
+}
+
+@media (max-width: 633px){
+    .divMangas{
+        width: 482px;
+    }
+}
+@media (max-width: 554px){
+    .divMangas{
+        width: min-content;
+    }
+    .title{
+        font-size: 16px;
+    }
+}
